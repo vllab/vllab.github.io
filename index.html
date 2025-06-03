@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Hashing Neural Video Decomposition</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<meta name="keywords" content="hashing-nvd, hashing neural video decomposition, video reconstruction, video editing">
+		<meta name="description" content="Project page of 'Hashing Neural Video Decomposition with Multiplicative Residuals in Space-Time'">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title center">
+				Hashing Neural Video Decomposition
+				<br/>
+				with Multiplicative Residuals in Space-Time
+				<br/>
+				<small>ICCV 2023</small>
+			</h1>
+			<ul class="inline-list">
+				<li>
+					Cheng-Hung Chan
+				</li>
+				<li>
+					Cheng-Yang Yuan
+				</li>
+				<li>
+					<a href="https://sunset1995.github.io/">Cheng Sun</a>
+				</li>
+				<li>
+					<a href="https://htchen.github.io/">Hwann-Tzong Chen</a>
+				</li>
+				<br/><br/>
+				National Tsing Hua University
+			</ul>
+			<ul class="inline-list">
+				<li><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chan_Hashing_Neural_Video_Decomposition_with_Multiplicative_Residuals_in_Space-Time_ICCV_2023_paper.pdf">
+					<img src="../fontawesome-free-6.4.0-web/svgs/regular/file-lines.svg" height="50px" /><br/>
+					Paper
+				</a></li>
+				<li><a href="#">
+					<img src="../fontawesome-free-6.4.0-web/svgs/brands/youtube.svg" height="50px" /><br/>
+					Video
+				</a></li>
+				<li><a href="https://github.com/vllab/hashing-nvd">
+					<img src="../fontawesome-free-6.4.0-web/svgs/brands/github.svg" height="50px" /><br/>
+					Code
+				</a></li>
+			</ul>
+			<div class="center">
+				<div class="row" style="width: 90%;">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/teaser.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-1">
+				<h2 class="title" id="Abstract">Abstract</h2>
+				<p class="text-justify">We present a video decomposition method that facilitates layer-based editing of videos with spatiotemporally varying lighting and motion effects. Our neural model decomposes an input video into multiple layered representations, each comprising a 2D texture map, a mask for the original video, and a multiplicative residual characterizing the spatiotemporal variations in lighting conditions. A single edit on the texture maps can be propagated to the corresponding locations in the entire video frames while preserving other contents' consistencies. Our method efficiently learns the layer-based neural representations of a 1080p video in 25s per frame via coordinate hashing and allows real-time rendering of the edited result at 71 fps on a single GPU. Qualitatively, we run our method on various videos to show its effectiveness in generating high-quality editing effects. Quantitatively, we propose to adopt feature-tracking evaluation metrics for objectively assessing the consistency of video editing.</p>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Reconstruction">Reconstruction</h2>
+			</div>
+			<div class="center">
+				<div class="row offset-1">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/reconstruction.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Reconstruction_1080p">Reconstruction (1080p)</h2>
+			</div>
+			<div class="center">
+				<div class="row offset-1" style="margin-bottom: 10px">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/1080p.mp4">
+					</video>
+				</div>
+				<div class="row offset-1">
+					<video class="video" style="width: 33%" autoplay loop muted controls>
+						<source src="demo/reconstruction_1080p/blackswan.mp4">
+					</video>
+					<video class="video" style="width: 33%" autoplay loop muted controls>
+						<source src="demo/reconstruction_1080p/discoball.mp4">
+					</video>
+					<video class="video" style="width: 33%" autoplay loop muted controls>
+						<source src="demo/reconstruction_1080p/lucia.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Editing">Video Editing</h2>
+			</div>
+			<div class="center">
+				<div class="row offset-1">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/editing.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Camera">Camera Motion Control</h2>
+			</div>
+			<div class="center">
+				<div class="row offset-1">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/camera.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Comparison">Compare with Previous Works</h2>
+			</div>
+			<div class="center">
+				<div class="row offset-1">
+					<video class="video" autoplay loop muted controls>
+						<source src="demo/comparison.mp4">
+					</video>
+				</div>
+			</div>
+			<div class="center offset-2">
+				<h2 class="title left" id="Acknowledgements">Acknowledgements</h2>
+			</div>
+			<div class="center offset-1">
+				<p class="text-justify">This work was supported in part by NSTC grants 111-2221-E-001-011-MY2 and 112-2221-E-A49-100-MY3 of Taiwan. We are grateful to National Center for High-performance Computing for providing computational resources and facilities.</p>
+			</div>
+		</div>
+	</body>
+</html>

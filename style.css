@@ -1,0 +1,60 @@
+.container {
+	margin: auto;
+	max-width: 1200px;
+	font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+.title {
+	font-weight: 300;
+}
+
+.title small {
+	font-size: 20px;
+	color: #6f6f6f;
+}
+
+.inline-list {
+	text-align: center;
+	padding: 0px;
+}
+
+.inline-list li {
+	text-align: center;
+	display: inline-block;
+	min-width: 60px;
+	margin: auto 20px;
+}
+
+.row {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: #2780e3;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.left {
+	text-align: left;
+}
+
+.offset-1 {
+	max-width: 750px;
+}
+
+.offset-2 {
+	max-width: 800px;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.video {
+	max-width: 100%;
+}
